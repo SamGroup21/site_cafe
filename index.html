@@ -1,169 +1,128 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de l univerisite de </title>
+    <title>Campus Café</title>
     <link rel="stylesheet" href="styele.css">
 </head>
 <body>
-
+ 
+    <!-- EN-TÊTE : seulement le titre et le menu -->
     <header>
-        <section class="section_bar">
-            <div class="nav_bar">
-                <h1>Campus Cafe</h1>
-                <nav class="link">
-                    <a href="">Acceuil</a>
-                    <a href="">Nos produit</a>
-                    <a href="">A propos</a>
-                    <a href="">Contact</a>
-                </nav>
-            </div>
-        </section>
-
-        <section class="sectin1">
-            <div class="div_pres">
-                <h1>PRESENTATION DU CAFE</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repell
-                    endus quasi fuga voluptatem quo, quidem ipsam sint ne
-                    
-                    sciunt aliquid reiciendis iusto provident sequi, ipsa
-                     quia autem hic. Quia molestiae ipsum adipisci.</p>
-                     <div class="btn">
-                        <button onclick='alert("Merci de nous choisir")'>Decouvrir nos produit</button>
-                     </div>
-                     <div class="image">
-                        <img src="photo/Transform Your Restaurant Into a Premium Dining Destination!.jpeg" alt="image de notre resto">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Similique nostrum fuga numquam quis aliquid sit quas nesciunt asperiores! 
-                            ibero illo iste fuga blanditiis non, nisi rerum sunt rem reprehenderit cupiditate.
-                        </p>
-                     </div>
-            </div>
-        </section>
-
-    <section>
-            <h1>Nos produit</h1>
-        <div class="img_produit">
-            <div" class="card1">
-                <img src="photo/Pain maison sans machine à pain - chefNini.jpeg" alt=" ">
-                <span>Cafe</span>
-                <p>cafe compose par de sucre</p>
-                <span>2500</span>
-                <button onclick="alert('vous avez acheter le cafe')">Commander</button>
-
-            
-
-            <div class="card2">
-                 <img src="photo/Transform Your Restaurant Into a Premium Dining Destination!.jpeg" alt="image du produit produit">
-                <span>Pain</span>
-                <p>compose par la farine </p>
-                <span>2500</span>
-                <button onclick="alert('vous avez acheter notre paix')">Commander</button>
-
-            </div>
-
-
-            <div class="card3">
-                <img src="photo/Pain maison sans machine à pain - chefNini.jpeg" alt="Cookie">
-                <span>Cookie</span>
-                <p>Cookie aux pépites de chocolat </p>
-                <span>1.80£</span>
-                <button onclick="alert('vous avez acheter notre paix')">Commander</button>
-
-            </div>
-
-            <div class="card4">
-                <img src="photo/cafe.jpeg" alt="Muffin">
-                
-                <div class="container">
-                    <span>Mufffin</span>
-                    <p>Muffin du jour </p>
-                    <span>1.80£</span>
-                     <button onclick="alert('vous avez acheter notre Muffin')">Commander</button>
-
-                </div>
-                
-
-            </div>
-            
-            <div class="card4">
-                <img src="photo/Pain maison sans machine à pain - chefNini.jpeg" alt="Cappuccino">
-                <span>Cappuccino</span>
-                <p>Café, lait et mousse de lait</p>
-                <span>2.50£</span>
-                <button onclick="alert('vous avez acheter notre Cappuccino')">Commander</button>
-
-            </div>
-
-            <div class="card5">
-                <img src="photo/Pain maison sans machine à pain - chefNini.jpeg" alt="Espresso">
-                <span>Espresso</span>
-                <p>Un café court et intense</p>
-                <span>1.50£</span>
-                <button onclick="alert('vous avez acheter notre Espresso')">Commander</button>
-
-            </div>
-       </div>
-        
-    </section>
-
-
-    <section>
-            <div>
-                <h1>A propos du Cafe</h1>
-                <div>
-                    <span>Produit Locaux :
-                        <ul>
-                            <li>cafe</li>
-                            <li>paix</li>
-                            <li>the chaud</li>
-                        </ul>
-                    </span>
-                </div>
-
-                 <div>
-                    <span>Ouvert de Lundi au vendredi :
-                        <ul>
-                            <li>Lundi </li>
-                            <li>Mercredi</li>
-                            <li>Vendredi</li>
-                        </ul>
-                    </span>
-                </div>
-
-                <div>
-                    <span> Wifi Gratuit :
-                        <ul>
-                            <li>starlink </li>
-                            <li>NVIDIA</li>
-                            <li>internet</li>
-                        </ul>
-                    </span>
-                </div>
-
-
-            </div>
-    </section>
-
-
-    <section>
-       
-            <footer>
-                <div>
-                    <h1>Cafe- Le Claire</h1>
-                    <span>Notre adresse est a la 85 rue du gauche pid</span>
-                    <span>Mention du Copie right</span>
-                </div>
-                  
-            </footer>
-        
-    </section>
-
-
-
+        <h1>Campus Café</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#produits">Nos produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    
+ 
+    <main>
+ 
+        <!-- PRÉSENTATION -->
+        <section id="accueil">
+            <h2>Présentation du café</h2>
+            <p>
+                Bienvenue au Campus Café ! Venez déguster nos boissons chaudes
+                et nos pâtisseries dans une ambiance détendue, entre deux cours.
+            </p>
+            <a href="#produits"><button>Découvrir nos produits</button></a>
+            <img src="photo/restaurant.jpeg" alt="Image de notre café">
+        </section>
+ 
+        <!-- PRODUITS -->
+        <section id="produits">
+            <h2>Nos produits</h2>
+ 
+            <div class="cartes">
+ 
+                <div class="carte">
+                    <img src="photo/cafe.jpeg" alt="Café">
+                    <h3>Café</h3>
+                    <p>Un café chaud avec du sucre.</p>
+                    <p class="prix">1.80 €</p>
+                    <button onclick="alert('Vous avez commandé un café')">Commander</button>
+                </div>
+ 
+                <div class="carte">
+                    <img src="photo/Pain maison sans machine à pain - chefNini.jpeg" alt="Pain">
+                    <h3>Pain</h3>
+                    <p>Pain fait avec de la farine.</p>
+                    <p class="prix">1.00 €</p>
+                    <button onclick="alert('Vous avez commandé du pain')">Commander</button>
+                </div>
+ 
+                <div class="carte">
+                    <img src="photo/Pain maison sans machine à pain - chefNini.jpeg" alt="Cookie">
+                    <h3>Cookie</h3>
+                    <p>Cookie aux pépites de chocolat.</p>
+                    <p class="prix">1.80 €</p>
+                    <button onclick="alert('Vous avez commandé un cookie')">Commander</button>
+                </div>
+ 
+                <div class="carte">
+                    <img src="photo/Transform Your Restaurant Into a Premium Dining Destination!.jpeg" alt="Muffin">
+                    <h3>Muffin</h3>
+                    <p>Muffin du jour.</p>
+                    <p class="prix">1.80 €</p>
+                    <button onclick="alert('Vous avez commandé un muffin')">Commander</button>
+                </div>
+ 
+                <div class="carte">
+                    <img src="photo/Pain maison sans machine à pain - chefNini.jpeg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Café, lait et mousse de lait.</p>
+                    <p class="prix">2.50 €</p>
+                    <button onclick="alert('Vous avez commandé un cappuccino')">Commander</button>
+                </div>
+ 
+                <div class="carte">
+                    <img src="photo/Transform Your Restaurant Into a Premium Dining Destination!.jpeg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>Un café court et intense.</p>
+                    <p class="prix">1.50 €</p>
+                    <button onclick="alert('Vous avez commandé un espresso')">Commander</button>
+                </div>
+ 
+            </div>
+        </section>
+ 
+        <!-- À PROPOS -->
+        <section id="apropos">
+            <h2>À propos du café</h2>
+ 
+            <h3>Produits locaux</h3>
+            <ul>
+                <li>Café</li>
+                <li>Pain</li>
+                <li>Thé chaud</li>
+            </ul>
+ 
+            <h3>Ouvert du lundi au vendredi</h3>
+            <ul>
+                <li>Lundi</li>
+                <li>Mardi</li>
+                <li>Mercredi</li>
+                <li>Jeudi</li>
+                <li>Vendredi</li>
+            </ul>
+ 
+            <h3>Wifi gratuit</h3>
+            <p>Connexion internet gratuite pour tous les clients.</p>
+        </section>
+ 
+    </main>
+ 
+    <!-- PIED DE PAGE -->
+    <footer id="contact">
+        <h2>Campus Café</h2>
+        <p>Adresse : 85 rue de Gauche</p>
+        <p>© 2026 Campus Café - Tous droits réservés</p>
+    </footer>
+ 
 </body>
 </html>
+ 

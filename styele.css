@@ -1,64 +1,137 @@
-*{
-    margin: 10px ;
-    padding: 5px;
+/* ===== Réglages de base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-body{
-    background-color: rgba(246, 255, 245, 0.795);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e6;
+    color: #333;
+    line-height: 1.5;
 }
-
-.section_bar{
-    border: solid 1px red;
-    
-    
+ 
+/* ===== En-tête (flexbox) ===== */
+header {
+    background-color: #5a3825;
+    color: white;
+    padding: 15px 30px;
+ 
+    display: flex;                    /* les éléments (titre + menu) se mettent côte à côte */
+    justify-content: space-between;   /* titre à gauche, menu à droite */
+    align-items: center;              /* alignés au milieu en hauteur */
 }
-.nav_bar{
-     border: solid 1px green;
-     display: flex;
-     align-items: center;
-     justify-content:center;
-
+ 
+/* ===== Menu (flexbox) ===== */
+nav {
+    display: flex;      /* les liens se mettent en ligne (horizontalement) */
+    gap: 20px;          /* espace entre les liens */
 }
-
-.link a{
-    border: solid 1px yellow;
+ 
+nav a {
+    color: white;
     text-decoration: none;
 }
-.nav_bar h1 {
-    color: darkgreen;
+ 
+nav a:hover {
+    text-decoration: underline;
 }
-.div_pres{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: smaller;
+ 
+/* ===== Sections ===== */
+section {
+    padding: 30px;
+    text-align: center;
 }
-.btn button{
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+ 
+h2 {
+    margin-bottom: 15px;
+    color: #5a3825;
+}
+ 
+/* ===== Présentation ===== */
+#accueil img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
     border-radius: 10px;
-    font-weight: 100;
 }
-
-.image img{
-    width: 25%;
-    height: 25%;
+ 
+/* ===== Boutons ===== */
+button {
+    background-color: #5a3825;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
-.image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
+button:hover {
+    background-color: #8b5a3c;
 }
-.img_produit img{
-   border: solid 1px green;
-   width: 15%;
-   height: 20%;
-
+ 
+/* ===== Cartes des produits (flexbox) ===== */
+.cartes {
+    display: flex;               /* 1. active flexbox : les cartes se mettent côte à côte */
+    flex-wrap: wrap;             /* 2. si pas assez de place, les cartes passent à la ligne */
+    justify-content: center;     /* 3. cartes centrées horizontalement */
+    gap: 20px;                   /* 4. espace entre les cartes */
 }
-.img_produit.card1.card2.card3.card4.card5.card6{
-    display: flex;
-    flex-wrap: wrap;
-    gap : 20px;
-    justify-content: center;
+ 
+.carte {
+    background-color: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+}
+ 
+.carte img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+ 
+.prix {
+    font-weight: bold;
+    color: #5a3825;
+}
+ 
+/* ===== À propos ===== */
+#apropos h3 {
+    margin-top: 15px;
+}
+ 
+#apropos ul {
+    list-style-position: inside;
+}
+ 
+/* ===== Pied de page ===== */
+footer {
+    background-color: #5a3825;
+    color: white;
+    text-align: center;
     padding: 20px;
+}
+ 
+/* ===== RESPONSIVE DESIGN ===== */
+/* Quand l'écran fait 600px de large OU MOINS, ces règles s'appliquent */
+@media (max-width: 600px) {
+ 
+    header {
+        flex-direction: column;   /* le titre au-dessus, le menu en dessous */
+        gap: 10px;
+    }
+ 
+    nav {
+        flex-direction: column;   /* les liens deviennent VERTICAUX */
+        align-items: center;
+        gap: 10px;
+    }
+ 
+    .carte {
+        width: 100%;              /* chaque carte prend toute la largeur */
+    }
 }
